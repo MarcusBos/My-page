@@ -3,9 +3,9 @@
     --black: #000000;
     --gray-bg: #969696;
     --menu-w: 186px;
-    --menu-h: 430px;
+    --menu-h: 532px;
     --menu-shape-w: 132px;
-    --menu-shape-h: 398px;
+    --menu-shape-h: 500px;
     --menu-top: 25px;
     --menu-right: 2px;
     --menu-item-size: 20px;
@@ -311,10 +311,7 @@ body {
     text-decoration: underline;
 }
 
-.page-one .page-one-menu-item:last-child,
-.page-two .page-one-menu-item:last-child,
-.page-three .page-one-menu-item:last-child,
-.page-four .page-one-menu-item:last-child {
+.page-one-menu .page-one-menu-item:last-child {
     transform: translateY(-10px);
 }
 
@@ -399,6 +396,7 @@ body {
     margin: 0;
     font-size: 70.3297px;
     line-height: 84px;
+    transform: translateX(-75px);
 }
 
 /* ------------------------ PAGE 4 ------------------------ */
@@ -443,6 +441,167 @@ body {
     line-height: 25px;
 }
 
+/* ------------------------ PAGE 5 ------------------------ */
+.page-five {
+    --menu-color: var(--black);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c2c2c2;
+    color: var(--black);
+}
+
+.page-five-stage {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page-five-wrap {
+    position: relative;
+    width: min(100vw, calc(100vh * 2));
+    aspect-ratio: 1280 / 640;
+    background: #c2c2c2;
+    overflow: hidden;
+}
+
+.page-five-title {
+    position: absolute;
+    width: 72px;
+    height: 21px;
+    left: 30px;
+    top: 10px;
+    margin: 0;
+    font-family: "Inria Serif", Georgia, "Times New Roman", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17.5824px;
+    line-height: 21px;
+    color: var(--black);
+}
+
+.page-five-card {
+    position: absolute;
+    width: 349.54px;
+    height: 188.48px;
+    overflow: hidden;
+}
+
+.page-five-card-behance {
+    left: 97.27px;
+    top: 70.79px;
+    background: var(--black);
+}
+
+.page-five-card-frame32 {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    width: 60px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.page-five-card-frame29 {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    width: 60px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.page-five-card-email {
+    left: 524.88px;
+    top: 241.47px;
+    background: #969696;
+}
+
+.page-five-card-github {
+    left: 97.27px;
+    top: 412.15px;
+    background: var(--white);
+}
+
+.page-five-text {
+    position: absolute;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.6593px;
+    line-height: 15px;
+    text-decoration: none;
+}
+
+.page-five-text-behance {
+    left: 187px;
+    top: 141px;
+    color: var(--white);
+}
+
+.page-five-text-email {
+    left: 629px;
+    top: 328px;
+    color: var(--black);
+}
+
+.page-five-text-github {
+    left: 222.46px;
+    top: 498.66px;
+    color: var(--black);
+}
+
+.page-five-icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.page-five-icon-behance {
+    left: 187px;
+    top: 159px;
+}
+
+.page-five-icon-mail {
+    left: 629px;
+    top: 303px;
+}
+
+.page-five-icon-github {
+    left: 186px;
+    top: 493px;
+}
+
+.page-five-mark {
+    position: absolute;
+    width: 60.57px;
+    height: 33.34px;
+    object-fit: none;
+    object-position: right bottom;
+}
+
+.page-five-mark-top {
+    left: 376.995px;
+    top: 180px;
+}
+
+.page-five-mark-middle {
+    left: 803.995px;
+    top: 351px;
+}
+
+.page-five-mark-bottom {
+    left: 376.995px;
+    top: 522px;
+}
+
 /* ------------------------ RESPONSIVE ------------------------ */
 @media (max-width: 992px) {
     .page-one-logo {
@@ -465,7 +624,8 @@ body {
 
     .page-two-wrap,
     .page-three-wrap,
-    .page-four-wrap {
+    .page-four-wrap,
+    .page-five-wrap {
         width: 100vw;
         min-height: 100vh;
         aspect-ratio: auto;
@@ -541,6 +701,16 @@ body {
         bottom: 52px;
         width: 320px;
         font-size: 28px;
+    }
+
+    .page-five-wrap {
+        aspect-ratio: 1280 / 640;
+        min-height: 0;
+    }
+
+    .page-five .page-one-menu {
+        transform: scale(0.82);
+        transform-origin: top right;
     }
 }
 
@@ -629,5 +799,9 @@ body {
         bottom: 18px;
         width: 220px;
         font-size: 18px;
+    }
+
+    .page-five .page-one-menu {
+        transform: scale(0.6);
     }
 }
