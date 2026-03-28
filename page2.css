@@ -242,3 +242,66 @@ body {
         font-size: 58px;
     }
 }
+
+@media (max-width: 768px) {
+    .page-two-wrap {
+        width: 100vw;
+        min-height: 100vh;
+        aspect-ratio: auto;
+        padding: 86px 18px 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .page-two-name-small,
+    .page-two-marcus,
+    .page-two-boston {
+        position: static;
+        margin: 0;
+    }
+
+    .page-two-name-small {
+        font-size: clamp(16px, 4.2vw, 22px);
+        line-height: 1.2;
+    }
+
+    .page-two-marcus,
+    .page-two-boston {
+        font-size: clamp(44px, 12vw, 72px);
+        line-height: 1.05;
+    }
+
+    .page-two-boston {
+        align-self: flex-end;
+    }
+
+    .page-one-toggle {
+        right: 10px;
+        top: 10px;
+    }
+
+    .page-one-menu {
+        right: -2px;
+        top: 8px;
+        transform: scale(0.72);
+        transform-origin: top right;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-two-wrap {
+        padding: 82px 14px 22px;
+    }
+
+    .page-two-marcus,
+    .page-two-boston {
+        font-size: clamp(36px, 11.6vw, 56px);
+    }
+
+    .page-one-menu {
+        transform: scale(0.62);
+        right: -8px;
+    }
+}

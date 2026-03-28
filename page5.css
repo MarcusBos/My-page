@@ -312,3 +312,86 @@ body {
         transform: scale(0.6);
     }
 }
+
+@media (max-width: 768px) {
+    .page-five-wrap {
+        width: 100vw;
+        min-height: 100vh;
+        aspect-ratio: auto;
+        padding: 86px 16px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .page-five-title {
+        position: static;
+        width: auto;
+        height: auto;
+        font-size: clamp(20px, 6vw, 30px);
+        line-height: 1.2;
+        margin: 0 0 4px;
+    }
+
+    .page-five-card,
+    .page-five-icon,
+    .page-five-mark {
+        display: none;
+    }
+
+    .page-five-text {
+        position: static;
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 14px 16px;
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        border-radius: 10px;
+        font-size: clamp(14px, 4vw, 18px);
+        line-height: 1.35;
+        word-break: break-word;
+    }
+
+    .page-five-text-behance {
+        color: var(--white);
+        background: var(--black);
+    }
+
+    .page-five-text-email {
+        color: var(--black);
+        background: #dddddd;
+    }
+
+    .page-five-text-github {
+        color: var(--black);
+        background: var(--white);
+    }
+
+    .page-one-toggle {
+        right: 10px;
+        top: 10px;
+    }
+
+    .page-one-menu {
+        right: -2px;
+        top: 8px;
+        transform: scale(0.72);
+        transform-origin: top right;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-five-wrap {
+        padding: 82px 12px 20px;
+    }
+
+    .page-five-text {
+        padding: 12px 14px;
+        font-size: clamp(13px, 3.8vw, 16px);
+    }
+
+    .page-one-menu {
+        transform: scale(0.62);
+        right: -8px;
+    }
+}

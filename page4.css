@@ -273,3 +273,77 @@ body {
         font-size: 18px;
     }
 }
+
+@media (max-width: 768px) {
+    .page-four-wrap {
+        width: 100vw;
+        min-height: 100vh;
+        aspect-ratio: auto;
+        padding: 86px 18px 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 14px;
+    }
+
+    .page-four-title,
+    .page-four-left,
+    .page-four-right,
+    .page-four-bottom {
+        position: static;
+        margin: 0;
+        width: 100%;
+    }
+
+    .page-four-title {
+        font-size: clamp(16px, 4.2vw, 22px);
+        line-height: 1.2;
+    }
+
+    .page-four-left,
+    .page-four-right,
+    .page-four-bottom {
+        font-size: clamp(19px, 5.1vw, 30px);
+        line-height: 1.28;
+        font-weight: 400;
+    }
+
+    .page-four-right {
+        text-align: right;
+    }
+
+    .page-four-bottom {
+        margin-top: auto;
+        font-size: clamp(17px, 4.5vw, 26px);
+    }
+
+    .page-one-toggle {
+        right: 10px;
+        top: 10px;
+    }
+
+    .page-one-menu {
+        right: -2px;
+        top: 8px;
+        transform: scale(0.72);
+        transform-origin: top right;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-four-wrap {
+        padding: 82px 14px 22px;
+        gap: 10px;
+    }
+
+    .page-four-left,
+    .page-four-right,
+    .page-four-bottom {
+        font-size: clamp(16px, 4.8vw, 22px);
+    }
+
+    .page-one-menu {
+        transform: scale(0.62);
+        right: -8px;
+    }
+}

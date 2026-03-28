@@ -100,3 +100,59 @@ body {
 .side-menu a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .layout-wrap {
+        padding: 82px 16px 24px;
+    }
+
+    .layout-title {
+        font-size: clamp(32px, 10vw, 48px);
+    }
+
+    .layout-text {
+        font-size: clamp(18px, 4.8vw, 24px);
+        line-height: 1.35;
+        max-width: 92vw;
+    }
+
+    .layout-links {
+        width: 100%;
+        max-width: 92vw;
+        gap: 10px;
+    }
+
+    .layout-links a {
+        font-size: clamp(20px, 5.2vw, 28px);
+    }
+
+    .menu-toggle {
+        right: 10px;
+        top: 10px;
+        width: 32px;
+        height: 26px;
+    }
+
+    .menu-toggle span {
+        width: 32px;
+        margin: 6px 0;
+    }
+
+    .side-menu {
+        right: -6px;
+        top: 16px;
+        transform: scale(0.74);
+        transform-origin: top right;
+    }
+}
+
+@media (max-width: 480px) {
+    .layout-wrap {
+        padding: 76px 12px 20px;
+    }
+
+    .side-menu {
+        transform: scale(0.64);
+        right: -12px;
+    }
+}
