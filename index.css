@@ -263,8 +263,8 @@ body {
 
 @media (max-width: 480px) {
     .page-one-logo {
-        left: 12px;
-        top: 267px;
+        left: 7px;
+        top: 339px;
         width: min(50vw, 180px);
         transform: none;
     }
