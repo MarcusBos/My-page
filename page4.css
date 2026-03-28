@@ -318,7 +318,7 @@ body {
     }
 
     .page-four-bottom {
-        margin-top: auto;
+        margin-top: 6px;
         font-size: clamp(17px, 4.5vw, 26px);
     }
 
