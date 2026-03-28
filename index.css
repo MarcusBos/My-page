@@ -266,3 +266,28 @@ body {
         right: -8px;
     }
 }
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .page-one {
+        align-items: flex-start;
+    }
+
+    .page-one-stage {
+        align-items: flex-start;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .page-one-canvas {
+        width: 100vw;
+        min-height: 560px;
+        height: 560px;
+    }
+
+    .page-one-menu {
+        right: -6px;
+        top: 6px;
+        transform: scale(0.6);
+        transform-origin: top right;
+    }
+}
