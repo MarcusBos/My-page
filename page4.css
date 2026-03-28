@@ -333,6 +333,14 @@ body {
         transform: scale(0.72);
         transform-origin: top right;
     }
+
+    .page-one-menu-shape {
+        left: -10px;
+    }
+
+    .page-one-menu-item {
+        margin-left: -10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -350,5 +358,13 @@ body {
     .page-one-menu {
         transform: scale(0.62);
         right: -8px;
+    }
+
+    .page-one-menu-shape {
+        left: -12px;
+    }
+
+    .page-one-menu-item {
+        margin-left: -12px;
     }
 }

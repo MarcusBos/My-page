@@ -247,6 +247,14 @@ body {
         transform-origin: top right;
     }
 
+    .page-one-menu-shape {
+        left: -10px;
+    }
+
+    .page-one-menu-item {
+        margin-left: -10px;
+    }
+
     .page-one-bg,
     .page-one-overlay {
         height: 100%;
@@ -264,6 +272,14 @@ body {
     .page-one-menu {
         transform: scale(0.62);
         right: -8px;
+    }
+
+    .page-one-menu-shape {
+        left: -12px;
+    }
+
+    .page-one-menu-item {
+        margin-left: -12px;
     }
 }
 
@@ -289,5 +305,13 @@ body {
         top: 6px;
         transform: scale(0.6);
         transform-origin: top right;
+    }
+
+    .page-one-menu-shape {
+        left: -12px;
+    }
+
+    .page-one-menu-item {
+        margin-left: -12px;
     }
 }
