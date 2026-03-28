@@ -296,6 +296,10 @@ body {
     }
 
     .page-four-title {
+        position: absolute;
+        top: 10px;
+        left: 18px;
+        z-index: 4;
         font-size: clamp(16px, 4.2vw, 22px);
         line-height: 1.2;
     }
@@ -310,6 +314,7 @@ body {
 
     .page-four-right {
         text-align: right;
+        transform: translateX(-135px);
     }
 
     .page-four-bottom {

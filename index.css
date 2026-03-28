@@ -216,9 +216,15 @@ body {
 }
 
 @media (max-width: 768px) {
+    .page-one,
+    .page-one-stage {
+        min-height: 100dvh;
+    }
+
     .page-one-canvas {
         width: 100vw;
-        min-height: 100vh;
+        height: 100dvh;
+        min-height: 100dvh;
         aspect-ratio: auto;
     }
 
@@ -240,12 +246,19 @@ body {
         transform: scale(0.72);
         transform-origin: top right;
     }
+
+    .page-one-bg,
+    .page-one-overlay {
+        height: 100%;
+    }
 }
 
 @media (max-width: 480px) {
     .page-one-logo {
         left: 12px;
+        top: 267px;
         width: min(50vw, 180px);
+        transform: none;
     }
 
     .page-one-menu {

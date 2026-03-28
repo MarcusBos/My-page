@@ -56,4 +56,5 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem(MENU_STATE_KEY, "false");
         });
     });
+
 });

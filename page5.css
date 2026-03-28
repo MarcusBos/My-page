@@ -118,8 +118,8 @@ body {
 }
 
 .page-five-text-behance {
-    left: 187px;
-    top: 141px;
+    left: 89.73px;
+    top: 70.21px;
     color: var(--white);
 }
 
@@ -130,8 +130,8 @@ body {
 }
 
 .page-five-text-github {
-    left: 222.46px;
-    top: 498.66px;
+    left: 125.19px;
+    top: 86.51px;
     color: var(--black);
 }
 
@@ -144,8 +144,8 @@ body {
 }
 
 .page-five-icon-behance {
-    left: 187px;
-    top: 159px;
+    left: 89.73px;
+    top: 88.21px;
 }
 
 .page-five-icon-mail {
@@ -154,8 +154,8 @@ body {
 }
 
 .page-five-icon-github {
-    left: 186px;
-    top: 493px;
+    left: 88.73px;
+    top: 80.85px;
 }
 
 .page-five-mark {
@@ -315,56 +315,148 @@ body {
 
 @media (max-width: 768px) {
     .page-five-wrap {
+        --mobile-scale: 0.52;
         width: 100vw;
         min-height: 100vh;
         aspect-ratio: auto;
-        padding: 86px 16px 24px;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
+        padding: 0;
+        display: block;
     }
 
     .page-five-title {
-        position: static;
+        position: absolute;
+        top: 10px;
+        left: 18px;
+        z-index: 4;
         width: auto;
         height: auto;
-        font-size: clamp(20px, 6vw, 30px);
+        font-size: clamp(16px, 4.2vw, 22px);
         line-height: 1.2;
-        margin: 0 0 4px;
+        margin: 0;
     }
 
-    .page-five-card,
-    .page-five-icon,
-    .page-five-mark {
-        display: none;
+    .page-five-card {
+        width: calc(349.54px * var(--mobile-scale));
+        height: calc(188.48px * var(--mobile-scale));
+    }
+
+    .page-five-card-behance {
+        left: calc(97.27px * var(--mobile-scale));
+        top: calc(140px * var(--mobile-scale));
+    }
+
+    .page-five-card-email {
+        left: calc(97.27px * var(--mobile-scale));
+        top: calc((684.3px * var(--mobile-scale)) - 30px);
+    }
+
+    .page-five-card-github {
+        left: calc(97.27px * var(--mobile-scale));
+        top: calc((412.15px * var(--mobile-scale)) - 15px);
+    }
+
+    .page-five-card-frame32,
+    .page-five-card-frame29 {
+        right: calc(10px * var(--mobile-scale));
+        width: calc(60px * var(--mobile-scale));
+        height: calc(30px * var(--mobile-scale));
+    }
+
+    .page-five-text-behance {
+        left: calc(94.15px * var(--mobile-scale));
+        top: calc(71.15px * var(--mobile-scale));
+        transform: none;
+        font-size: calc((12.6593px * var(--mobile-scale)) + 5px);
+        line-height: calc((15px * var(--mobile-scale)) + 5px);
+    }
+
+    .page-five-text-email {
+        left: calc(199.39px * var(--mobile-scale));
+        top: calc((770.83px * var(--mobile-scale)) - 30px);
+        font-size: calc((12.6593px * var(--mobile-scale)) + 5px);
+        line-height: calc((15px * var(--mobile-scale)) + 5px);
+    }
+
+    .page-five-text-github {
+        left: calc(123px * var(--mobile-scale));
+        top: calc(86.5px * var(--mobile-scale));
+        font-size: calc((12.6593px * var(--mobile-scale)) + 5px);
+        line-height: calc((15px * var(--mobile-scale)) + 5px);
     }
 
     .page-five-text {
-        position: static;
-        display: block;
-        width: 100%;
+        position: absolute;
+        display: inline-block;
+        width: auto;
         margin: 0;
-        padding: 14px 16px;
-        border: 1px solid rgba(0, 0, 0, 0.35);
-        border-radius: 10px;
-        font-size: clamp(14px, 4vw, 18px);
-        line-height: 1.35;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        font-size: calc(12.6593px * var(--mobile-scale));
+        line-height: calc(15px * var(--mobile-scale));
         word-break: break-word;
+        z-index: 2;
     }
 
     .page-five-text-behance {
         color: var(--white);
-        background: var(--black);
+        background: transparent;
     }
 
     .page-five-text-email {
         color: var(--black);
-        background: #dddddd;
+        background: transparent;
     }
 
     .page-five-text-github {
         color: var(--black);
-        background: var(--white);
+        background: transparent;
+    }
+
+    .page-five-icon {
+        width: calc(25px * var(--mobile-scale));
+        height: calc(25px * var(--mobile-scale));
+    }
+
+    .page-five-icon-behance {
+        left: calc(94.15px * var(--mobile-scale));
+        top: calc(96.15px * var(--mobile-scale));
+        width: calc((25px * var(--mobile-scale)) + 5px);
+        height: calc((25px * var(--mobile-scale)) + 5px);
+    }
+
+    .page-five-icon-mail {
+        left: calc(199.39px * var(--mobile-scale));
+        top: calc((733.83px * var(--mobile-scale)) - 30px);
+        width: calc((25px * var(--mobile-scale)) + 5px);
+        height: calc((25px * var(--mobile-scale)) + 5px);
+    }
+
+    .page-five-icon-github {
+        left: calc(79.5px * var(--mobile-scale));
+        top: calc(77.8px * var(--mobile-scale));
+        width: calc((25px * var(--mobile-scale)) + 5px);
+        height: calc((25px * var(--mobile-scale)) + 5px);
+    }
+
+    .page-five-mark {
+        width: calc(60.57px * var(--mobile-scale));
+        height: calc(33.34px * var(--mobile-scale));
+    }
+
+    .page-five-mark-top {
+        left: calc(376.995px * var(--mobile-scale));
+        top: calc(180px * var(--mobile-scale));
+    }
+
+    .page-five-mark-middle {
+        left: calc(376.385px * var(--mobile-scale));
+        top: calc(793.83px * var(--mobile-scale));
+    }
+
+    .page-five-mark-bottom {
+        left: calc(376.995px * var(--mobile-scale));
+        top: calc(522px * var(--mobile-scale));
     }
 
     .page-one-toggle {
@@ -382,12 +474,7 @@ body {
 
 @media (max-width: 480px) {
     .page-five-wrap {
-        padding: 82px 12px 20px;
-    }
-
-    .page-five-text {
-        padding: 12px 14px;
-        font-size: clamp(13px, 3.8vw, 16px);
+        --mobile-scale: 0.42;
     }
 
     .page-one-menu {

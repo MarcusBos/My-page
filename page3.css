@@ -310,6 +310,10 @@ body {
     }
 
     .page-three-title {
+        position: absolute;
+        top: 10px;
+        left: 18px;
+        z-index: 4;
         font-size: clamp(16px, 4.2vw, 22px);
         line-height: 1.2;
     }
@@ -329,6 +333,7 @@ body {
     .page-three-designer {
         align-self: flex-end;
         text-align: right;
+        margin-right: 120px;
     }
 
     .page-one-toggle {
