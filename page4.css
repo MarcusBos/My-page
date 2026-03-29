@@ -445,10 +445,12 @@ body {
         width: min(64vw, 420px);
         font-size: clamp(16px, 2.6vw, 20px);
         line-height: 1.22;
+        transform: translateY(-150px);
     }
 
     .page-four-bottom {
         margin-top: 6px;
+        transform: translateY(-150px);
     }
 
     .page-one-menu {
