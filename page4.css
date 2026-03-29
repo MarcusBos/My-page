@@ -418,7 +418,10 @@ body {
     }
 
     .page-four-right {
-        margin-left: 155px;
+        margin-left: 90px;
+        width: min(64vw, 420px);
+        font-size: clamp(16px, 2.6vw, 20px);
+        line-height: 1.22;
     }
 
     .page-four-bottom {
