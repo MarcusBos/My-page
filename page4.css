@@ -368,3 +368,75 @@ body {
         margin-left: -12px;
     }
 }
+
+@media (max-height: 700px) and (max-width: 1200px) and (orientation: landscape) {
+    .page-four {
+        align-items: flex-start;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .page-four-wrap {
+        width: 100vw;
+        min-height: 640px;
+        height: 640px;
+        aspect-ratio: auto;
+        padding: 86px 18px 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 14px;
+    }
+
+    .page-four-title,
+    .page-four-left,
+    .page-four-right,
+    .page-four-bottom {
+        position: static;
+        margin: 0;
+        width: min(72vw, 560px);
+        max-width: 100%;
+    }
+
+    .page-four-title {
+        position: absolute;
+        top: 10px;
+        left: 18px;
+        z-index: 4;
+        font-size: clamp(16px, 4.2vw, 22px);
+        line-height: 1.2;
+    }
+
+    .page-four-left,
+    .page-four-right,
+    .page-four-bottom {
+        font-size: clamp(18px, 3vw, 24px);
+        line-height: 1.28;
+        font-weight: 400;
+        text-align: left;
+        transform: none;
+    }
+
+    .page-four-right {
+        margin-left: 155px;
+    }
+
+    .page-four-bottom {
+        margin-top: 6px;
+    }
+
+    .page-one-menu {
+        right: 2px;
+        top: 25px;
+        transform: scale(0.72);
+        transform-origin: top right;
+    }
+
+    .page-one-menu-shape {
+        left: 0;
+    }
+
+    .page-one-menu-item {
+        margin-left: 0;
+    }
+}
