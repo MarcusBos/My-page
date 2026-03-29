@@ -364,15 +364,15 @@ body {
 
     .page-five-text-behance {
         left: calc(94.15px * var(--mobile-scale));
-        top: calc(71.15px * var(--mobile-scale));
+        top: calc((71.15px * var(--mobile-scale)) - 5px);
         transform: none;
-        font-size: calc((12.6593px * var(--mobile-scale)) + 5px);
-        line-height: calc((15px * var(--mobile-scale)) + 5px);
+        font-size: calc((12.6593px * var(--mobile-scale)) + 10px);
+        line-height: calc((15px * var(--mobile-scale)) + 10px);
     }
 
     .page-five-text-email {
-        left: calc(199.39px * var(--mobile-scale));
-        top: calc((770.83px * var(--mobile-scale)) - 30px);
+        left: 103px;
+        top: 373px;
         font-size: calc((12.6593px * var(--mobile-scale)) + 5px);
         line-height: calc((15px * var(--mobile-scale)) + 5px);
     }
@@ -483,6 +483,11 @@ body {
 @media (max-width: 480px) {
     .page-five-wrap {
         --mobile-scale: 0.42;
+    }
+
+    .page-five-text-email {
+        left: 82px;
+        top: 297px;
     }
 
     .page-one-menu {

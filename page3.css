@@ -326,14 +326,26 @@ body {
         line-height: 1.04;
     }
 
+    .page-three-uiux {
+        margin-top: -50px;
+    }
+
     .page-three-and {
         font-size: clamp(26px, 8.6vw, 52px);
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+
+    .page-three-web {
+        margin-top: 20px;
+        margin-left: 80px;
     }
 
     .page-three-designer {
         align-self: flex-end;
         text-align: right;
-        margin-right: 120px;
+        margin-top: 50px;
+        margin-right: 140px;
     }
 
     .page-one-toggle {
