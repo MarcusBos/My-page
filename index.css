@@ -289,15 +289,18 @@ body {
     }
 
     .page-one-stage {
+        justify-content: flex-start;
         align-items: flex-start;
+        height: 100dvh;
+        min-height: 100dvh;
         overflow-y: auto;
         overflow-x: hidden;
     }
 
     .page-one-canvas {
         width: 100vw;
-        min-height: 640px;
-        height: 640px;
+        min-height: 760px;
+        height: 760px;
         overflow: visible;
     }
 
