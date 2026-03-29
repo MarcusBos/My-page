@@ -505,15 +505,9 @@ body {
 }
 
 @media (min-width: 521px) and (max-width: 768px) {
-    .page-five {
-        align-items: flex-start;
-    }
-
     .page-five-stage {
-        justify-content: flex-start;
         align-items: flex-start;
         height: 100dvh;
-        min-height: 100dvh;
         overflow-y: auto;
         overflow-x: hidden;
     }
