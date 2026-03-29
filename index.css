@@ -283,7 +283,7 @@ body {
     }
 }
 
-@media (max-height: 500px) and (orientation: landscape) {
+@media (max-height: 700px) and (max-width: 1200px) and (orientation: landscape) {
     .page-one {
         align-items: flex-start;
     }
@@ -296,8 +296,8 @@ body {
 
     .page-one-canvas {
         width: 100vw;
-        min-height: 560px;
-        height: 560px;
+        min-height: 640px;
+        height: 640px;
     }
 
     .page-one-menu {

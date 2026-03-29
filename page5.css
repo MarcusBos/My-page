@@ -511,15 +511,16 @@ body {
 
     .page-five-stage {
         align-items: flex-start;
+        height: 100dvh;
         overflow-y: auto;
         overflow-x: hidden;
     }
 
     .page-five-wrap {
-        --mobile-scale: 0.62;
+        --mobile-scale: 0.52;
         width: 100vw;
-        min-height: 760px;
-        height: 760px;
+        min-height: 920px;
+        height: 920px;
         aspect-ratio: auto;
         padding: 0;
         display: block;
@@ -532,17 +533,17 @@ body {
 
     .page-five-card-behance {
         left: calc(97.27px * var(--mobile-scale));
-        top: calc(140px * var(--mobile-scale));
+        top: 96px;
     }
 
     .page-five-card-email {
         left: calc(97.27px * var(--mobile-scale));
-        top: calc((684.3px * var(--mobile-scale)) - 30px);
+        top: 408px;
     }
 
     .page-five-card-github {
         left: calc(97.27px * var(--mobile-scale));
-        top: calc((412.15px * var(--mobile-scale)) - 15px);
+        top: 252px;
     }
 
     .page-five-card-frame32,
@@ -561,7 +562,7 @@ body {
 
     .page-five-text-email {
         left: calc(199.39px * var(--mobile-scale));
-        top: calc((770.83px * var(--mobile-scale)) - 30px);
+        top: 455px;
         font-size: calc((12.6593px * var(--mobile-scale)) + 1px);
         line-height: calc((15px * var(--mobile-scale)) + 1px);
     }
@@ -587,7 +588,7 @@ body {
 
     .page-five-icon-mail {
         left: calc(199.39px * var(--mobile-scale));
-        top: calc((733.83px * var(--mobile-scale)) - 30px);
+        top: 434px;
         width: calc((25px * var(--mobile-scale)) + 5px);
         height: calc((25px * var(--mobile-scale)) + 5px);
     }
