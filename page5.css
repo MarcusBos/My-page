@@ -507,59 +507,21 @@ body {
 @media (min-width: 521px) and (max-width: 768px) {
     .page-five-stage {
         align-items: flex-start;
-        height: 100dvh;
+        min-height: 100vh;
+        height: auto;
         overflow-y: auto;
         overflow-x: hidden;
     }
 
     .page-five-wrap {
-        --mobile-scale: 0.46;
+        --mobile-scale: 0.6;
         width: 100vw;
-        min-height: 980px;
-        height: 980px;
+        min-height: 100vh;
+        height: auto;
+        aspect-ratio: auto;
+        padding: 0;
+        display: block;
         overflow: visible;
-    }
-
-    .page-five-card {
-        width: calc(349.54px * var(--mobile-scale));
-        height: calc(188.48px * var(--mobile-scale));
-    }
-
-    .page-five-card-behance {
-        left: calc(76px * var(--mobile-scale));
-        top: 96px;
-    }
-
-    .page-five-card-github {
-        left: calc(76px * var(--mobile-scale));
-        top: 236px;
-    }
-
-    .page-five-card-email {
-        left: calc(76px * var(--mobile-scale));
-        top: 376px;
-    }
-
-    .page-five-text-behance,
-    .page-five-text-github,
-    .page-five-text-email {
-        font-size: calc((12.6593px * var(--mobile-scale)) + 1px);
-        line-height: calc((15px * var(--mobile-scale)) + 1px);
-    }
-
-    .page-one-menu {
-        right: 2px;
-        top: 25px;
-        transform: scale(0.72);
-        transform-origin: top right;
-    }
-
-    .page-one-menu-shape {
-        left: 0;
-    }
-
-    .page-one-menu-item {
-        margin-left: 0;
     }
 }
 
