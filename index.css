@@ -264,7 +264,7 @@ body {
 @media (max-width: 480px) {
     .page-one-logo {
         left: 4px;
-        top: 371px;
+        top: 453px;
         width: min(50vw, 180px);
         transform: none;
     }
