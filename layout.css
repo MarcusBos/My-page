@@ -35,6 +35,7 @@ body {
 
 .layout-links {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 14px;
     width: 240px;
@@ -154,5 +155,20 @@ body {
     .side-menu {
         transform: scale(0.64);
         right: -12px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .layout-wrap {
+        padding: 72px 36px;
+    }
+
+    .layout-links {
+        width: min(100%, 360px);
+    }
+
+    .side-menu {
+        transform: scale(0.86);
+        transform-origin: top right;
     }
 }

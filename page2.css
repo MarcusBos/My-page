@@ -26,6 +26,7 @@ body {
     --menu-color: var(--white);
     min-height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background: var(--black);
@@ -34,7 +35,7 @@ body {
 
 .page-two-wrap {
     position: relative;
-    width: min(100vw, calc(100vh * 2));
+    width: min(100%, calc(100vh * 2));
     aspect-ratio: var(--frame-ratio);
     overflow: hidden;
     background: var(--black);
@@ -98,6 +99,7 @@ body {
     padding-top: 90px;
     padding-bottom: 8px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -115,6 +117,7 @@ body {
 .page-one-menu-item {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 12px;
     color: var(--menu-color);
@@ -185,7 +188,7 @@ body {
     }
 
     .page-two-wrap {
-        width: 100vw;
+        width: 100%;
         min-height: 100vh;
         aspect-ratio: auto;
     }
@@ -245,11 +248,12 @@ body {
 
 @media (max-width: 768px) {
     .page-two-wrap {
-        width: 100vw;
+        width: 100%;
         min-height: 100vh;
         aspect-ratio: auto;
         padding: 86px 18px 28px;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
         gap: 8px;
@@ -340,7 +344,7 @@ body {
     }
 
     .page-two-wrap {
-        width: 100vw;
+        width: 100%;
         min-height: 560px;
         height: 560px;
         aspect-ratio: auto;
@@ -359,5 +363,18 @@ body {
 
     .page-one-menu-item {
         margin-left: 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .page-two-wrap {
+        width: 100%;
+        min-height: 100vh;
+        aspect-ratio: auto;
+    }
+
+    .page-two-marcus,
+    .page-two-boston {
+        font-size: clamp(58px, 7vw, 72px);
     }
 }

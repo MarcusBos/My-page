@@ -26,15 +26,17 @@ body {
     --menu-color: var(--white);
     min-height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background: var(--black);
 }
 
 .page-one-stage {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -42,7 +44,7 @@ body {
 
 .page-one-canvas {
     position: relative;
-    width: min(100vw, calc(100vh * 2));
+    width: min(100%, calc(100vh * 2));
     aspect-ratio: var(--frame-ratio);
     background: var(--black);
     overflow: hidden;
@@ -130,6 +132,7 @@ body {
     padding-top: 90px;
     padding-bottom: 8px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -147,6 +150,7 @@ body {
 .page-one-menu-item {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 12px;
     color: var(--menu-color);
@@ -177,7 +181,7 @@ body {
 
 @media (max-width: 992px) {
     .page-one-canvas {
-        width: 100vw;
+        width: 100%;
         min-height: 100vh;
         aspect-ratio: auto;
     }
@@ -203,7 +207,7 @@ body {
 
 @media (max-width: 640px) {
     .page-one-canvas {
-        width: 100vw;
+        width: 100%;
     }
 
     .page-one-logo {
@@ -231,7 +235,7 @@ body {
     }
 
     .page-one-canvas {
-        width: 100vw;
+        width: 100%;
         height: auto;
         min-height: 100vh;
         aspect-ratio: auto;
@@ -289,6 +293,25 @@ body {
 
     .page-one-menu-item {
         margin-left: -12px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .page-one-stage,
+    .page-one-canvas {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .page-one-logo {
+        left: 20px;
+        top: 220px;
+        width: min(30vw, 240px);
+    }
+
+    .page-one-menu {
+        transform: scale(0.78);
+        transform-origin: top right;
     }
 }
 
